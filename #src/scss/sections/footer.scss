@@ -1,2 +1,18 @@
 .footer {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  ul {
+    display: flex;
+    li,
+    a {
+      font-size: 16px;
+      color: black;
+    }
+    li {
+      &:not(:first-child):before {
+        content: url("../img/icon.svg");
+        margin: 0 8px;
+      }
+    }
+  }
 }
