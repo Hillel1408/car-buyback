@@ -1,0 +1,53 @@
+.car-buyback {
+  background-color: #f0f0f0;
+  padding: 100px 0;
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    & > div:first-child {
+      max-width: 563px;
+      h2 {
+        margin-bottom: 32px;
+      }
+      p {
+        font-size: 18px;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    & > div:last-child {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  }
+  &__item {
+    padding: 20px;
+    border-radius: 18px;
+    border: 2px solid #d4d4d4;
+    background: white;
+    position: relative;
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 18px;
+    }
+    a {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    &:before {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  }
+}
