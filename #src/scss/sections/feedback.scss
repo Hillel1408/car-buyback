@@ -1,0 +1,131 @@
+.feedback {
+  background-color: #f0f0f0;
+  padding-bottom: 140px;
+  &__flex {
+    display: flex;
+    gap: calc(20 / 1360 * 100%);
+    & > div:first-child {
+      width: calc(785 / 1360 * 100%);
+      padding: 30px 40px;
+      background-color: white;
+      border-radius: 24px;
+      border: 1px solid #e7e7e7;
+      h2 {
+        margin-bottom: 30px;
+      }
+    }
+    & > div:last-child {
+      width: calc(555 / 1360 * 100%);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    button {
+      margin-top: 10px;
+    }
+    p {
+      color: #626262;
+      font-size: 14px;
+      line-height: 128%;
+      a {
+        color: #0416b6;
+        font-weight: 600;
+      }
+    }
+  }
+  &__btn {
+    background-color: transparent;
+    color: #5019c4;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &__trade-in {
+    padding: 30px 50px 30px 30px;
+    border-radius: 24px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+    position: relative;
+    overflow: hidden;
+    &-bg,
+    &-bg-2 {
+      width: 137px;
+      height: 217px;
+      filter: blur(64.5px);
+      position: absolute;
+      left: 0;
+    }
+    span {
+      font-size: 24px;
+      font-weight: 500;
+      padding-right: 70px;
+      gap: 20px;
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      &:before {
+        position: absolute;
+        right: 0;
+        font-size: 50px;
+      }
+    }
+    h3 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 125%;
+      max-width: 350px;
+    }
+  }
+  &__qr {
+    padding: 30px;
+    border-radius: 24px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    h3 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    button {
+      font-size: 18px;
+      font-weight: 500;
+      color: black;
+      padding: 17px 15px;
+      border-radius: 16px;
+      border: 2px solid #000;
+      background-color: transparent;
+      width: 100%;
+    }
+    & > div {
+      display: flex;
+      gap: 20px;
+      p {
+        font-size: 16px;
+        color: #4e4e4e;
+        line-height: 125%;
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
