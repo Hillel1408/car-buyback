@@ -6,6 +6,8 @@
     grid-template-columns: 1fr 1fr;
     align-items: baseline;
     & > div:first-child {
+      position: sticky;
+      top: 0;
       max-width: 563px;
       h2 {
         margin-bottom: 32px;
