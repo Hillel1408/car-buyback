@@ -1,0 +1,21 @@
+.privacy-policy {
+  background-color: #f0f0f0;
+  padding-bottom: 100px;
+  &__block {
+    padding: 30px;
+    border-radius: 24px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    & > div {
+      p {
+        font-size: 18px;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
