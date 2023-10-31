@@ -85,7 +85,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   transition: all 0.8s ease 0s;
-  z-index: 100;
+  z-index: 2;
   &.open {
     opacity: 1;
     visibility: visible;
@@ -140,4 +140,7 @@
 @import "./sections/privacy-policy";
 @import "./sections/contacts-block";
 @import "./sections/popup-order";
+@import "./sections/popup-callback";
 @import "./sections/footer";
+
+@import "./sections/cookie";
