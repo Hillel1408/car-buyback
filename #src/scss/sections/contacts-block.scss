@@ -1,0 +1,19 @@
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+    line-height: 144%;
+    align-items: flex-start;
+    span {
+      font-weight: 500;
+    }
+    a {
+      color: #5019c4;
+    }
+  }
+}

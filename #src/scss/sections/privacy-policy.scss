@@ -16,6 +16,21 @@
           margin-bottom: 20px;
         }
       }
+      h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        li {
+          font-size: 18px;
+          line-height: 133%;
+        }
+      }
+      &:nth-child(2) {
+        margin-top: -10px;
+      }
     }
   }
 }

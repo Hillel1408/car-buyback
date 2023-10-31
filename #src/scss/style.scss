@@ -73,6 +73,55 @@
     width: calc(440 / 1360 * 100%);
   }
 }
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  z-index: 100;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.open &-content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+  }
+  &-body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease 0s;
+    padding: 16px 0;
+  }
+  &-content {
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    background: white;
+    position: relative;
+    & > button {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      background: #f6f6f6;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
 
 @import "./sections/header";
 @import "./sections/intro";
@@ -89,4 +138,6 @@
 @import "./sections/article";
 @import "./sections/reviews";
 @import "./sections/privacy-policy";
+@import "./sections/contacts-block";
+@import "./sections/popup-order";
 @import "./sections/footer";

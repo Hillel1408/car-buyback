@@ -26,7 +26,7 @@
     grid-template-columns: 1fr 220px;
     gap: 20px;
   }
-  form {
+  &__form {
     display: flex;
     flex-direction: column;
     gap: 20px;
