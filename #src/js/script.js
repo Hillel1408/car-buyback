@@ -27,3 +27,16 @@ const swiper2 = new Swiper(".latest__slider", {
     },
   },
 });
+
+const popupMeunOpen = document.querySelector(".popup-menu-open");
+const menu = document.querySelector(".menu");
+const popupMenuClose = document.querySelector(".popup-menu-close");
+
+popupMeunOpen.addEventListener("click", function () {
+  menu.classList.toggle("open");
+  document.body.classList.toggle("loсk");
+});
+popupMenuClose.addEventListener("click", function () {
+  menu.classList.toggle("open");
+  document.body.classList.toggle("loсk");
+});

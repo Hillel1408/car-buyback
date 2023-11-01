@@ -15,9 +15,42 @@
     @@include('./html/car-brands.html') @@include('./html/feedback.html')
     @@include('./html/scheme.html') @@include('./html/latest.html')
     @@include('./html/contacts.html') @@include('./html/footer.html')
-    <!--@@include('./html/popup-order.html') @@include('./html/popup-callback.html')
-    @@include('./html/cookie.html') @@include('./html/popup-menu.html')-->
+    @@include('./html/popup-order.html') @@include('./html/popup-callback.html')
+    @@include('./html/cookie.html') @@include('./html/popup-menu.html')
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const popupOrderOpen = document.querySelector(".popup-order-open");
+      const order = document.querySelector(".order");
+      const popupOrderClose = document.querySelector(".popup-order-close");
+
+      popupOrderOpen.addEventListener("click", function () {
+        order.classList.toggle("open");
+        document.body.classList.toggle("loсk");
+      });
+      popupOrderClose.addEventListener("click", function () {
+        order.classList.toggle("open");
+        document.body.classList.toggle("loсk");
+      });
+
+      const popupCallbackOpen = document.querySelectorAll(
+        ".popup-callback-open"
+      );
+      const callback = document.querySelector(".callback");
+      const popupCallbackClose = document.querySelector(
+        ".popup-callback-close"
+      );
+
+      popupCallbackOpen.forEach((item) => {
+        item.addEventListener("click", function () {
+          callback.classList.toggle("open");
+          document.body.classList.toggle("loсk");
+        });
+      });
+      popupCallbackClose.addEventListener("click", function () {
+        callback.classList.toggle("open");
+        document.body.classList.toggle("loсk");
+      });
+    </script>
   </body>
 </html>

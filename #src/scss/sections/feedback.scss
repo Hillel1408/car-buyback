@@ -85,10 +85,10 @@
     gap: 10px;
     align-items: center;
     @media (max-width: 1179px) {
-      padding: 18px;
+      font-size: 18px;
     }
     @media (max-width: 767px) {
-      padding: 16px;
+      font-size: 16px;
     }
   }
   &__trade-in {
