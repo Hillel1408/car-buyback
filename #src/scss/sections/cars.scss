@@ -5,12 +5,31 @@
     display: flex;
     align-items: flex-start;
     gap: calc(20 / 1360 * 100%);
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+    @media (max-width: 767px) {
+      gap: 0;
+    }
     & > div:first-child {
       width: calc(900 / 1360 * 100%);
       padding: 30px 40px 40px 40px;
       background: white;
       border-radius: 24px;
       border: 1px solid #e7e7e7;
+      @media (max-width: 1359px) {
+        padding: 30px;
+      }
+      @media (max-width: 1023px) {
+        width: 100%;
+      }
+      @media (max-width: 767px) {
+        padding: 20px;
+        border-bottom: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
       h2 {
         margin-bottom: 30px;
         max-width: 600px;
@@ -20,11 +39,17 @@
         &:not(:last-child) {
           margin-bottom: 20px;
         }
+        @media (max-width: 1179px) {
+          font-size: 16px;
+        }
       }
     }
     & > div:last-child {
       overflow: hidden;
       width: calc(440 / 1360 * 100%);
+      @media (max-width: 1023px) {
+        width: 100%;
+      }
     }
   }
 }
