@@ -1,18 +1,39 @@
 .scheme {
   padding-bottom: 140px;
   background-color: #f0f0f0;
+  @media (max-width: 1359px) {
+    padding-bottom: 80px;
+  }
+  @media (max-width: 1023px) {
+    padding-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
   h2 {
     text-align: center;
     margin-bottom: 50px;
+    @media (max-width: 1359px) {
+      margin-bottom: 30px;
+    }
   }
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    @media (max-width: 1023px) {
+      grid-template-columns: 1fr;
+    }
     & > div {
       display: flex;
       flex-direction: column;
       gap: 10px;
       align-items: center;
+      position: relative;
+      @media (max-width: 1023px) {
+        align-items: flex-start;
+        padding-left: 80px;
+      }
       span {
         display: flex;
         width: 60px;
@@ -23,15 +44,30 @@
         justify-content: center;
         font-size: 20px;
         font-weight: 600;
+        @media (max-width: 1023px) {
+          position: absolute;
+          left: 0;
+        }
       }
       h3 {
         font-size: 20px;
         font-weight: 600;
+        @media (max-width: 1179px) {
+          font-size: 18px;
+        }
       }
       p {
         text-align: center;
         max-width: 300px;
         font-size: 18px;
+        line-height: normal;
+        @media (max-width: 1179px) {
+          font-size: 16px;
+          line-height: 137.5%;
+        }
+        @media (max-width: 1023px) {
+          text-align: left;
+        }
         a {
           color: #2a00a3;
           font-weight: 600;
@@ -50,5 +86,12 @@
     text-align: center;
     margin: 50px auto 0 auto;
     font-size: 18px;
+    line-height: normal;
+    @media (max-width: 1359px) {
+      margin: 40px auto 0 auto;
+    }
+    @media (max-width: 1179px) {
+      font-size: 16px;
+    }
   }
 }
