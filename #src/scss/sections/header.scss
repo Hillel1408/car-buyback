@@ -13,6 +13,14 @@
       display: flex;
       align-items: center;
       gap: 20px;
+      img {
+        @media (max-width: 1023px) {
+          width: 180px;
+        }
+        @media (max-width: 767px) {
+          width: 169px;
+        }
+      }
     }
     & > div:last-child {
       display: flex;
@@ -26,6 +34,9 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    @media (max-width: 1023px) {
+      display: none;
+    }
   }
   &__tel {
     font-size: 18px;
@@ -33,6 +44,19 @@
     align-items: center;
     gap: 5px;
     color: black;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__mobile-tel {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background-color: #f7f7f8;
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+    }
   }
   &__btn {
     border-radius: 16px;
@@ -40,10 +64,16 @@
     padding: 16px 15px;
     font-size: 18px;
     font-weight: 500;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   &__menu-btn {
     padding: 19px;
     border-radius: 12px;
     background: #f6f6f6;
+    @media (max-width: 767px) {
+      padding: 15px;
+    }
   }
 }

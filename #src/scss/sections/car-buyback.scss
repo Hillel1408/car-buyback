@@ -1,21 +1,45 @@
 .car-buyback {
   background-color: #f0f0f0;
   padding: 100px 0;
+  @media (max-width: 1359px) {
+    padding: 80px 0;
+  }
+  @media (max-width: 1023px) {
+    padding: 60px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 50px 0;
+  }
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
     align-items: baseline;
+    @media (max-width: 1023px) {
+      grid-template-columns: 1fr;
+    }
     & > div:first-child {
       position: sticky;
       top: 0;
       max-width: 563px;
+      @media (max-width: 1023px) {
+        position: static;
+        max-width: none;
+      }
       h2 {
         margin-bottom: 32px;
+        @media (max-width: 1359px) {
+          margin-bottom: 22px;
+        }
       }
       p {
         font-size: 18px;
+        line-height: normal;
         &:not(:last-child) {
           margin-bottom: 20px;
+        }
+        @media (max-width: 1179px) {
+          font-size: 16px;
         }
       }
     }
@@ -23,6 +47,16 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
+      @media (max-width: 1359px) {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      @media (max-width: 1023px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+      }
     }
   }
   &__item {
@@ -31,6 +65,9 @@
     border: 2px solid #d4d4d4;
     background: white;
     position: relative;
+    @media (max-width: 767px) {
+      padding: 15px;
+    }
     h3 {
       font-size: 20px;
       font-weight: 600;
