@@ -7,6 +7,9 @@
   border-radius: 16px;
   padding: 20px;
   position: relative;
+  @media (max-width: 767px) {
+    margin-right: auto;
+  }
   &-body {
     padding: 0;
   }
