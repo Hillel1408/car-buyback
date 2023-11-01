@@ -43,16 +43,24 @@
   font-size: 18px;
   font-weight: 500;
   color: white;
+  @media (max-width: 767px) {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
 }
 .secondary-btn {
   font-size: 18px;
   font-weight: 500;
   color: black;
-  padding: 17px 15px;
+  padding: 16px 15px;
   border-radius: 16px;
   border: 2px solid #000;
   background-color: transparent;
   width: 100%;
+  @media (max-width: 767px) {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
 }
 .back-btn {
   display: flex;
@@ -167,3 +175,4 @@
 @import "./sections/cookie";
 @import "./sections/popup-menu";
 @import "./sections/check-city";
+@import "./sections/buttons";
