@@ -1,6 +1,15 @@
 .cars {
   background-color: #f0f0f0;
   padding-bottom: 100px;
+  @media (max-width: 1359px) {
+    padding-bottom: 80px;
+  }
+  @media (max-width: 1023px) {
+    padding-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
   &__flex {
     display: flex;
     align-items: flex-start;
