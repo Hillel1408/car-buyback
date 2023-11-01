@@ -18,23 +18,47 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    @media (max-width: 1023px) {
+      grid-template-columns: 1fr;
+    }
     & > div:first-child {
       padding: 30px;
       border-radius: 20px;
       border: 1px solid #e7e7e7;
       background: #fff;
+      @media (max-width: 767px) {
+        padding: 25px 20px 20px 20px;
+      }
       h2 {
         margin-bottom: 120px;
+        @media (max-width: 1359px) {
+          margin-bottom: 100px;
+        }
+        @media (max-width: 1179px) {
+          margin-bottom: 60px;
+        }
+        @media (max-width: 767px) {
+          margin-bottom: 20px;
+        }
       }
     }
     & > div:last-child {
       border-radius: 20px;
       border: 1px solid #e7e7e7;
       overflow: hidden;
+      @media (max-width: 1023px) {
+        height: 575px;
+      }
+      @media (max-width: 767px) {
+        height: 504px;
+      }
     }
   }
   &__btn {
     width: 315px;
     margin-top: 30px;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   }
 }

@@ -3,15 +3,32 @@
   padding: 20px 0;
   ul {
     display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
     li,
     a {
       font-size: 16px;
       color: black;
+      line-height: 162%;
+      @media (max-width: 1023px) {
+        font-size: 14px;
+      }
     }
     li {
       &:not(:first-child):before {
         content: url("../img/icon.svg");
         margin: 0 8px;
+      }
+      &:last-child {
+        @media (max-width: 767px) {
+          width: 100%;
+          text-align: center;
+          &::before {
+            display: none;
+          }
+        }
       }
     }
   }
