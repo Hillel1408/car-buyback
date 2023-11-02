@@ -23,6 +23,16 @@
       line-height: 125%;
       position: relative;
       align-items: center;
+      @media (max-width: 1359px) {
+        font-size: 22px;
+      }
+      @media (max-width: 1023px) {
+        font-size: 20px;
+      }
+      @media (max-width: 767px) {
+        font-size: 18px;
+        padding: 15px;
+      }
       a {
         position: absolute;
         width: 100%;
