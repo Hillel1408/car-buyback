@@ -17,7 +17,7 @@
     @@include('./html/contacts.html') @@include('./html/footer.html')
     @@include('./html/popup-order.html') @@include('./html/popup-callback.html')
     @@include('./html/cookie.html') @@include('./html/popup-menu.html')
-    @@include('./html/buttons.html')
+    @@include('./html/buttons.html') @@include('./html/popup-phone.html')
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script>
@@ -31,25 +31,6 @@
       });
       popupOrderClose.addEventListener("click", function () {
         order.classList.toggle("open");
-        document.body.classList.toggle("loсk");
-      });
-
-      const popupCallbackOpen = document.querySelectorAll(
-        ".popup-callback-open"
-      );
-      const callback = document.querySelector(".callback");
-      const popupCallbackClose = document.querySelector(
-        ".popup-callback-close"
-      );
-
-      popupCallbackOpen.forEach((item) => {
-        item.addEventListener("click", function () {
-          callback.classList.toggle("open");
-          document.body.classList.toggle("loсk");
-        });
-      });
-      popupCallbackClose.addEventListener("click", function () {
-        callback.classList.toggle("open");
         document.body.classList.toggle("loсk");
       });
     </script>

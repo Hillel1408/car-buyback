@@ -65,6 +65,19 @@
     border: 2px solid #d4d4d4;
     background: white;
     position: relative;
+    &:hover {
+      h3 {
+        color: #5019c4;
+      }
+    }
+    &.active {
+      background-color: #f0f0f0;
+      &:hover {
+        h3 {
+          color: #000;
+        }
+      }
+    }
     @media (max-width: 767px) {
       padding: 15px;
     }
@@ -72,6 +85,7 @@
       font-size: 20px;
       font-weight: 600;
       margin-bottom: 5px;
+      transition: 0.3s;
     }
     p {
       font-size: 18px;

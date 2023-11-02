@@ -43,6 +43,10 @@
   font-size: 18px;
   font-weight: 500;
   color: white;
+  transition: 0.3s;
+  &:hover {
+    background-color: #673ae9;
+  }
   @media (max-width: 767px) {
     padding: 12px 30px;
     font-size: 16px;
@@ -57,6 +61,16 @@
   border: 2px solid #000;
   background-color: transparent;
   width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  &:hover {
+    background-color: #000;
+    color: white;
+  }
   @media (max-width: 767px) {
     padding: 12px 30px;
     font-size: 16px;
@@ -69,6 +83,10 @@
   gap: 8px;
   font-size: 18px;
   font-weight: 500;
+  transition: 0.3s;
+  &:hover {
+    color: #673ae9;
+  }
 }
 .label {
   display: flex;
@@ -76,13 +94,27 @@
   font-size: 18px;
   font-weight: 500;
   gap: 10px;
-  input {
+  input,
+  textarea {
     padding: 18px 20px;
     border-radius: 16px;
     background: #f4f4f4;
     font-size: 18px;
     color: #909090;
     font-weight: 500;
+    transition: 0.3s;
+    &:hover {
+      background: #ededed;
+    }
+    &:focus {
+      outline: 2px solid #725bff;
+    }
+    &:invalid {
+      outline: 2px solid #de3232;
+    }
+  }
+  textarea {
+    height: 130px;
   }
   @media (max-width: 767px) {
     font-size: 16px;
@@ -189,6 +221,7 @@
 @import "./sections/contacts-block";
 @import "./sections/popup-order";
 @import "./sections/popup-callback";
+@import "./sections/popup-phone";
 @import "./sections/footer";
 
 @import "./sections/cookie";

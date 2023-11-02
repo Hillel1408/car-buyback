@@ -40,3 +40,40 @@ popupMenuClose.addEventListener("click", function () {
   menu.classList.toggle("open");
   document.body.classList.toggle("loсk");
 });
+
+const popupPhoneOpen = document.querySelector(".popup-phone-open");
+const phone = document.querySelector(".phone");
+const popupPhoneClose = document.querySelector(".popup-phone-close");
+
+popupPhoneOpen.addEventListener("click", function () {
+  phone.classList.toggle("open");
+  document.body.classList.toggle("loсk");
+});
+popupPhoneClose.addEventListener("click", function () {
+  phone.classList.toggle("open");
+  document.body.classList.toggle("loсk");
+});
+
+const feedbackBtn = document.querySelectorAll(".feedback__btn");
+
+feedbackBtn.forEach((item) => {
+  item.addEventListener("click", function () {
+    this.style.display = "none";
+    this.nextElementSibling.style.display = "flex";
+  });
+});
+
+const popupCallbackOpen = document.querySelectorAll(".popup-callback-open");
+const callback = document.querySelector(".callback");
+const popupCallbackClose = document.querySelector(".popup-callback-close");
+
+popupCallbackOpen.forEach((item) => {
+  item.addEventListener("click", function () {
+    callback.classList.toggle("open");
+    document.body.classList.toggle("loсk");
+  });
+});
+popupCallbackClose.addEventListener("click", function () {
+  callback.classList.toggle("open");
+  document.body.classList.toggle("loсk");
+});
