@@ -1,10 +1,17 @@
 <div class="popup order">
   <div class="popup-body">
     <div class="popup-content popup-order">
-      <h2 class="title popup-order__title">
-        <span>Узнайте стоимость</span>вашего авто всего за 15 минут
-      </h2>
-      @@include('./form.html')
+      <div>
+        <h2 class="title popup-order__title">
+          <span>Узнайте стоимость</span>вашего авто всего за 15 минут
+        </h2>
+        @@include('./form.html')
+      </div>
+      <div class="popup-callback__success" style="display: none">
+        <img src="img/icon-27.svg" alt="" />
+        <h3 class="title"><span>Мы получили</span> ваш запрос</h3>
+        <p>Наш менеджер свяжется с вами в ближайшее время</p>
+      </div>
       <button class="icon-12 popup-order-close"></button>
     </div>
   </div>

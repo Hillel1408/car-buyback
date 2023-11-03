@@ -13,19 +13,42 @@
       display: flex;
       align-items: center;
       gap: 20px;
-      img {
-        @media (max-width: 1023px) {
-          width: 180px;
-        }
-        @media (max-width: 767px) {
-          width: 169px;
-        }
-      }
     }
     & > div:last-child {
       display: flex;
       align-items: center;
       gap: 15px;
+    }
+  }
+  &__logo {
+    display: flex;
+    gap: 2px;
+    img {
+      transition: 0.6s;
+      &:last-child {
+        transform: translateY(5px);
+        @media (max-width: 1023px) {
+          width: 98px;
+        }
+        @media (max-width: 767px) {
+          width: 92px;
+        }
+      }
+      &:first-child {
+        @media (max-width: 1023px) {
+          width: 52px;
+        }
+        @media (max-width: 767px) {
+          width: 49px;
+        }
+      }
+    }
+    &:hover {
+      img {
+        &:nth-child(2) {
+          transform: rotate(180deg);
+        }
+      }
     }
   }
   &__city {

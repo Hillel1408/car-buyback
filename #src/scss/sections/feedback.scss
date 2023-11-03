@@ -70,11 +70,13 @@
     gap: 20px;
     button {
       margin-top: 10px;
+      height: 62px;
     }
     p {
       color: #626262;
       font-size: 14px;
       line-height: 128%;
+      margin-top: -5px;
       a {
         color: #0416b6;
         font-weight: 600;
@@ -141,6 +143,7 @@
       filter: blur(64.5px);
       position: absolute;
       left: 0;
+      z-index: 0;
     }
     span {
       font-size: 24px;
@@ -150,6 +153,7 @@
       display: inline-flex;
       align-items: center;
       position: relative;
+      z-index: 1;
       @media (max-width: 1359px) {
         font-size: 18px;
       }
@@ -164,6 +168,8 @@
       font-weight: 700;
       line-height: 125%;
       max-width: 350px;
+      position: relative;
+      z-index: 1;
       @media (max-width: 1359px) {
         font-size: 22px;
       }
@@ -199,6 +205,9 @@
         line-height: 125%;
         &:not(:last-child) {
           margin-bottom: 15px;
+        }
+        &:first-child {
+          margin-top: 5px;
         }
       }
       img {

@@ -22,6 +22,7 @@
       position: sticky;
       top: 0;
       max-width: 563px;
+      padding-left: 20px;
       @media (max-width: 1023px) {
         position: static;
         max-width: none;
@@ -62,16 +63,20 @@
   &__item {
     padding: 20px;
     border-radius: 18px;
-    border: 2px solid #d4d4d4;
+    border: 1px solid #e7e7e7;
     background: white;
     position: relative;
     &:hover {
       h3 {
         color: #5019c4;
       }
+      &:before {
+        transform: translateX(5px) translateY(-5px);
+      }
     }
     &.active {
       background-color: #f0f0f0;
+      border: 2px solid #d4d4d4;
       &:hover {
         h3 {
           color: #000;
@@ -98,9 +103,11 @@
       left: 0;
     }
     &:before {
+      transition: 0.3s;
       position: absolute;
-      right: 20px;
-      top: 20px;
+      right: 15px;
+      top: 15px;
+      font-size: 13px;
     }
   }
 }
