@@ -88,6 +88,9 @@
     border-radius: 12px;
     background-color: #f7f7f8;
     display: none;
+    &:before {
+      color: #000000;
+    }
     @media (max-width: 767px) {
       display: block;
       &:before {
@@ -109,6 +112,9 @@
     padding: 19px;
     border-radius: 12px;
     background: #f6f6f6;
+    &:before {
+      color: #000000;
+    }
     @media (max-width: 767px) {
       padding: 15px;
     }
