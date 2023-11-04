@@ -28,6 +28,10 @@
       }
       h1 {
         margin-bottom: 30px;
+        span {
+          transform: translateX(-10px);
+          margin-right: -10px;
+        }
         @media (max-width: 1023px) {
           max-width: 75%;
         }
