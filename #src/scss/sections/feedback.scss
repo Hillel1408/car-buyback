@@ -10,6 +10,33 @@
   @media (max-width: 767px) {
     padding-bottom: 50px;
   }
+  &__image-btn,
+  &__delete-image-btn {
+    min-width: 58px;
+    height: 58px;
+    border-radius: 12px;
+    border: 2px solid #d1d1d1;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    &:hover {
+      background: #f8f8f8;
+    }
+  }
+  &__image-btn {
+    &::before {
+      content: url("../img/icon-31.svg");
+      transform: translateY(2px);
+    }
+  }
+  &__delete-image-btn {
+    &::before {
+      content: url("../img/icon-32.svg");
+      transform: translateY(2px);
+    }
+  }
   &__flex {
     display: flex;
     gap: calc(20 / 1360 * 100%);
@@ -72,11 +99,18 @@
       margin-top: 10px;
       height: 62px;
     }
+    &-buttons {
+      display: flex;
+      gap: 15px;
+    }
     p {
       color: #626262;
       font-size: 14px;
       line-height: 128%;
       margin-top: -5px;
+      @media (max-width: 767px) {
+        margin-top: -10px;
+      }
       a {
         color: #0416b6;
         font-weight: 600;
@@ -183,12 +217,50 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    position: relative;
+    overflow: hidden;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 174px;
+      height: 246px;
+      background: rgba(39, 197, 14, 0.2);
+      filter: blur(64.5px);
+      right: 0;
+      top: 0;
+      transform: translateY(-63px) translateX(22px);
+    }
     @media (max-width: 1359px) {
       padding: 30px 20px;
     }
     h3 {
       font-size: 30px;
       font-weight: 600;
+      position: relative;
+      display: flex;
+      gap: 10px;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      line-height: normal;
+      &:before {
+        color: #37a305;
+        font-size: 30px;
+        @media (max-width: 1179px) {
+          font-size: 24px;
+        }
+      }
+      &.mobile {
+        display: none;
+        @media (max-width: 1023px) {
+          display: flex;
+        }
+      }
+      &.desktop {
+        @media (max-width: 1023px) {
+          display: none;
+        }
+      }
       @media (max-width: 1359px) {
         font-size: 24px;
       }

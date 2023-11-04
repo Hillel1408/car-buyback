@@ -7,6 +7,16 @@
   position: absolute;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.04),
     0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 1px 0px rgba(0, 0, 0, 0.04);
+  z-index: 1;
+  @media (max-width: 767px) {
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    border: none;
+    border-radius: 16px 16px 0px 0px;
+  }
   h3 {
     font-size: 22px;
     font-weight: 600;
@@ -28,5 +38,17 @@
   }
   img {
     margin-bottom: 10px;
+  }
+  & > button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #f6f6f6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

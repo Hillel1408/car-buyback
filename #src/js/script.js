@@ -77,3 +77,10 @@ popupCallbackClose.addEventListener("click", function () {
   callback.classList.toggle("open");
   document.body.classList.toggle("loсk");
 });
+
+const checkCity = document.querySelector(".check-city");
+const checkCityClose = document.querySelector(".check-city-close");
+
+checkCityClose.addEventListener("click", function () {
+  checkCity.style.display = "none";
+});

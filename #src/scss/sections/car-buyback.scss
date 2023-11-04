@@ -17,12 +17,16 @@
     align-items: baseline;
     @media (max-width: 1023px) {
       grid-template-columns: 1fr;
+      gap: 30px;
     }
     & > div:first-child {
       position: sticky;
       top: 0;
       max-width: 563px;
       padding-left: 20px;
+      @media (max-width: 1359px) {
+        padding-left: 0;
+      }
       @media (max-width: 1023px) {
         position: static;
         max-width: none;
@@ -41,6 +45,9 @@
         }
         @media (max-width: 1179px) {
           font-size: 16px;
+        }
+        @media (max-width: 1023px) {
+          max-width: 600px;
         }
       }
     }
@@ -66,6 +73,10 @@
     border: 1px solid #e7e7e7;
     background: white;
     position: relative;
+    @media (max-width: 1023px) {
+      background: #e8e8e8;
+      border: 1px solid #d6d6d6;
+    }
     &:hover {
       h3 {
         color: #5019c4;
@@ -91,9 +102,15 @@
       font-weight: 600;
       margin-bottom: 5px;
       transition: 0.3s;
+      @media (max-width: 767px) {
+        font-size: 18px;
+      }
     }
     p {
       font-size: 18px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
     }
     a {
       position: absolute;

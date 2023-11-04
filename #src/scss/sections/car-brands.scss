@@ -12,6 +12,9 @@
   }
   h2 {
     margin-bottom: 30px;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
   &__grid {
     display: grid;

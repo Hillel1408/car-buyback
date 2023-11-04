@@ -16,6 +16,9 @@
     @media (max-width: 1359px) {
       margin-bottom: 30px;
     }
+    @media (max-width: 1023px) {
+      text-align: left;
+    }
   }
   &__grid {
     display: grid;
@@ -116,6 +119,11 @@
     }
     @media (max-width: 1179px) {
       font-size: 16px;
+    }
+    @media (max-width: 1023px) {
+      text-align: left;
+      max-width: 75%;
+      margin-left: 0;
     }
   }
 }
