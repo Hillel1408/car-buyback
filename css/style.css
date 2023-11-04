@@ -2949,6 +2949,9 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
+.check-city > button:before {
+  color: #000000;
+}
 
 .buttons {
   display: none;
