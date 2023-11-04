@@ -484,6 +484,9 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
+.popup-content > button:before {
+  color: #000000;
+}
 
 .header {
   background-color: #f0f0f0;
@@ -2918,6 +2921,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #000000;
 }
 .check-city__buttons button {
   background-color: transparent;
