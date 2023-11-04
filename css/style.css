@@ -616,6 +616,9 @@ h6 {
   background-color: #f7f7f8;
   display: none;
 }
+.header__mobile-tel:before {
+  color: #000000;
+}
 @media (max-width: 767px) {
   .header__mobile-tel {
     display: block;
@@ -640,6 +643,9 @@ h6 {
   padding: 19px;
   border-radius: 12px;
   background: #f6f6f6;
+}
+.header__menu-btn:before {
+  color: #000000;
 }
 @media (max-width: 767px) {
   .header__menu-btn {
