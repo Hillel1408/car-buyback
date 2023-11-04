@@ -14,7 +14,11 @@
   <div class="container">
     <div class="header__block">
       <div>
-        <img src="img/logo.svg" alt="" />
+        <div class="header__logo">
+          <img src="img/logo-1.svg" alt="" />
+          <img src="img/logo-3.svg" alt="" />
+          <img src="img/logo-2.svg" alt="" />
+        </div>
         <span class="icon-1 header__city">Новосибирск</span>
       </div>
       <div>
@@ -26,7 +30,7 @@
         <button class="icon-3 header__menu-btn popup-menu-open"></button>
       </div>
     </div>
-    <div class="check-city" style="display: none">
+    <div class="check-city">
   <img src="img/icon-28.svg" alt="" />
   <h3>Новосибирск</h3>
   <span>Вы здесь?</span>
@@ -34,6 +38,7 @@
     <button>Выбрать другой</button>
     <button>Да, верно</button>
   </div>
+  <button class="icon-12 check-city-close"></button>
 </div>
 
   </div>
@@ -155,7 +160,10 @@
   <div class="swiper-wrapper">
     <div class="swiper-slide cars__slide">
       <span class="icon-6">Недавние сделки</span>
-      <h3>Ford Explorer 2018, выкупили за 1 750 000 ₽</h3>
+      <h3>
+        Ford Explorer 2018, <br />
+        выкупили за 1 750 000 ₽
+      </h3>
       <div
         class="cars__slide-bg"
         style="background-color: rgba(14, 87, 197, 0.1)"
@@ -167,7 +175,10 @@
     </div>
     <div class="swiper-slide cars__slide">
       <span class="icon-6">Недавние сделки</span>
-      <h3>Ford Explorer 2018, выкупили за 1 750 000 ₽</h3>
+      <h3>
+        Ford Explorer 2018, <br />
+        выкупили за 1 750 000 ₽
+      </h3>
       <div
         class="cars__slide-bg"
         style="background-color: rgba(14, 87, 197, 0.1)"
@@ -260,25 +271,33 @@
     <div class="popup order">
   <div class="popup-body">
     <div class="popup-content popup-order">
-      <h2 class="title popup-order__title">
-        <span>Узнайте стоимость</span>вашего авто всего за 15 минут
-      </h2>
-      <form class="feedback__form" action="#">
-  <label class="label">Ваш телефон<input type="tel" /></label>
+      <div>
+        <h2 class="title popup-order__title">
+          <span>Узнайте стоимость</span>вашего авто всего за 15 минут
+        </h2>
+        <form class="feedback__form" action="#">
+  <label class="label"><span>Ваш телефон</span><input type="tel" /></label>
   <div class="feedback__grid">
     <label class="label"
-      >Марка и модель авто<input placeholder="Например: Audi Q7" type="text"
+      ><span>Марка и модель авто</span
+      ><input placeholder="Например: Audi Q7" type="text"
     /></label>
     <label class="label"
-      >Год выпуска<input placeholder="2011" type="text"
+      ><span>Год выпуска</span><input placeholder="2011" type="text"
     /></label>
   </div>
   <span class="feedback__btn icon-7">
     Добавить фото и описание автомобиля
   </span>
   <div class="feedback__hidden-block">
-    <label class="label"> Опишите состояние авто<textarea></textarea></label>
-    <button class="secondary-btn icon-14">Прикрепить фотографии</button>
+    <label class="label"
+      ><span>Опишите состояние авто</span><textarea></textarea>
+    </label>
+    <div class="feedback__form-buttons">
+      <button class="secondary-btn icon-14">Прикрепить фотографии</button>
+      <button class="feedback__image-btn"></button>
+      <button class="feedback__delete-image-btn"></button>
+    </div>
   </div>
   <button class="btn" type="submit">Отправить на оценку</button>
   <p>
@@ -289,6 +308,12 @@
   </p>
 </form>
 
+      </div>
+      <div class="popup-callback__success" style="display: none">
+        <img src="img/icon-27.svg" alt="" />
+        <h3 class="title"><span>Мы получили</span> ваш запрос</h3>
+        <p>Наш менеджер свяжется с вами в ближайшее время</p>
+      </div>
       <button class="icon-12 popup-order-close"></button>
     </div>
   </div>
@@ -387,7 +412,7 @@
 
     <div class="buttons">
   <button class="btn">Оценить авто</button>
-  <button class="secondary-btn">Whatsapp</button>
+  <button class="secondary-btn icon-4">Whatsapp</button>
 </div>
  <div class="popup phone">
   <div class="popup-body">
