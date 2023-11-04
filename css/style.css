@@ -2921,12 +2921,12 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #000000;
 }
 .check-city__buttons button {
   background-color: transparent;
   font-size: 18px;
   font-weight: 500;
+  color: #000000;
 }
 .check-city img {
   margin-bottom: 10px;
